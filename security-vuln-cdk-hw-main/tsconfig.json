@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "lib": ["es2016", "es2017.object", "es2017.string"],
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "outDir": ".build",
+    "plugins": [
+      { "name": "typescript-tslint-plugin", "packageManager": "yarn" }
+    ],
+    "baseUrl": "./lib",
+    "paths": {
+      "@services/*": ["services/*"],
+      "@lambdas/*": ["lambdas/*"],
+      "*": ["../node_modules/*"]
+    }
+  },
+  "exclude": ["cdk.out", "node_modules"]
+}

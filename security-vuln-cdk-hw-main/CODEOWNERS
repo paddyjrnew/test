@@ -1,0 +1,3 @@
+/security_log/**/review       @rafastealth/security
+/Jenkinsfile.prod             @rafastealth/security
+CODEOWNERS                    @rafastealth/security

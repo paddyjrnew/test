@@ -1,0 +1,8 @@
+{
+  "app": "ts-node bin/security-vuln-cdk-hw.ts",
+  "requireApproval": "never",
+  "context": {
+    "REGION": "us-west-2",
+    "SERVICE_NAME": "security-vuln-cdk-hw"
+  }
+}
